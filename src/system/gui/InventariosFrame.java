@@ -245,6 +245,7 @@ public class InventariosFrame extends javax.swing.JInternalFrame {
         proveedor.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
         proveedor.setLocation(600, 150);
         proveedor.setAlwaysOnTop(true);
+        //ajsdkasjdklasd
     }//GEN-LAST:event_btnAgregarProveedorActionPerformed
 
 
