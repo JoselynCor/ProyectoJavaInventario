@@ -22,8 +22,12 @@ public class Producto {
     private Double precio_compra_prod;
     private Double precio_venta_prod;
     private Double existencias_prod;
+    private int id_categoria_prod;
+    private int id_proveedor;
 
-    public Producto(String id_Prod, String nombre_Prod, String des_prod, Double stock_prod, File foto_prod, String unidad_prod, Double precio_compra_prod, Double precio_venta_prod, Double existencias_prod) {
+    public Producto(String id_Prod, String nombre_Prod, String des_prod, Double stock_prod, File foto_prod, 
+            String unidad_prod, Double precio_compra_prod, Double precio_venta_prod, 
+            Double existencias_prod, int id_categoria_prod, int id_proveedor) {
         this.id_Prod = id_Prod;
         this.nombre_Prod = nombre_Prod;
         this.des_prod = des_prod;
@@ -33,6 +37,8 @@ public class Producto {
         this.precio_compra_prod = precio_compra_prod;
         this.precio_venta_prod = precio_venta_prod;
         this.existencias_prod = existencias_prod;
+        this.id_categoria_prod = id_categoria_prod;
+        this.id_proveedor = id_proveedor;
     }
 
     public Double getExistencias_prod() {
@@ -105,6 +111,22 @@ public class Producto {
 
     public void setPrecio_venta_prod(Double precio_venta_prod) {
         this.precio_venta_prod = precio_venta_prod;
+    }
+
+    public int getId_categoria_prod() {
+        return id_categoria_prod;
+    }
+
+    public void setId_categoria_prod(int id_categoria_prod) {
+        this.id_categoria_prod = id_categoria_prod;
+    }
+
+    public int getId_proveedor() {
+        return id_proveedor;
+    }
+
+    public void setId_proveedor(int id_proveedor) {
+        this.id_proveedor = id_proveedor;
     }
     
     
